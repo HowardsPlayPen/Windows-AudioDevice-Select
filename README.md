@@ -11,15 +11,15 @@ It was an interesting voyage though, as this implementation uses an interface th
 
 To call this application you can merely :
 
-audio-dev-enumerate --list
+    audio-dev-enumerate --list
 
 OR 
 
-audio-dev-enumerate --device {}
+    audio-dev-enumerate --device {}
 
 where on my machine I can call:
 
-audio-dev-enumerate --device {0.0.0.00000000}.{e774d123-a2b9-4445-b182-5b1d3632c0d8}
+    audio-dev-enumerate --device {0.0.0.00000000}.{e774d123-a2b9-4445-b182-5b1d3632c0d8}
 
 to change the device to a RealTek device present.
 
