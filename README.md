@@ -35,3 +35,8 @@ I integrated it with AutoHotKey (see https://www.autohotkey.com/) in order to bi
     ;Benq
     ^!2::run "e:\bin\audio-dev-enumerate.exe --device {0.0.0.00000000}.{cf8907d5-be32-429b-abf4-fea8d2a6799a}"
 
+    ; Mute / unmute current sound device
+    ^!3::
+    {
+        SoundSetMute -1
+    }
