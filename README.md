@@ -7,7 +7,7 @@ I only wanted a simple command line app to integrate it with Macros for changing
 
 Once I wrote the code I found that other repositories exist for the same thing - e.g. https://github.com/yan0lovesha/AudioSwitch an implementation in Rust.
 
-It was an interesting voyage though as this implementation uses an interface that is clearly a Windows supported one but must have been reverse engineered - hence the PolicyConfig.h file I downloaded from the internet. To me it is an example of the breathtaking craziness of Microsoft and why you need to jump through hoops to do such a simple task
+It was an interesting voyage though, as this implementation uses an interface that is clearly a Windows supported one, but must have been reverse engineered - hence the standalone PolicyConfig.h file that I downloaded from the internet. To me it is an example of the breathtaking craziness of Microsoft and why you need to jump through hoops to do such a simple task
 
 To call this application you can merely :
 
@@ -40,3 +40,12 @@ I integrated it with AutoHotKey (see https://www.autohotkey.com/) in order to bi
     {
         SoundSetMute -1
     }
+
+
+To call the above macros, once installed via AutoHotKey, you could press:
+
+CTRL + ALT + 1    => will run the macro "^!1::run", i.e. change to RealTek 
+
+OR
+
+CTRL + ALT + 3 => will run the mute macro
